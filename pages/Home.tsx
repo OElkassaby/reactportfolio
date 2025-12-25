@@ -14,8 +14,8 @@ const Home: React.FC = () => {
             <span className="text-muted dark:text-gray-500">Intentional Design.</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted dark:text-gray-400 font-light leading-relaxed max-w-2xl mb-12">
-            I’m {RESUME_DATA.name}, a Mechanical Engineer specializing in product design and development with 4+ years of
-             experience in the medical device industry. I have a proven track record of and bringing complex hardware from concept to reality.
+            I’m {RESUME_DATA.name}, a Mechanical Engineer specializing in product design and development. I have 4+ years of
+             experience in the medical device industry, with a proven track record of bringing complex hardware from concept to reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 items-start">
             <Link
