@@ -10,36 +10,36 @@ const Home: React.FC = () => {
       <section className="pt-32 pb-40 px-6 sm:px-8 max-w-7xl mx-auto">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-primary dark:text-white mb-8 leading-[1.1]">
-            Engineering with <br className="hidden md:block" />
-            <span className="text-muted dark:text-gray-500">precision and purpose.</span>
+            Precision Engineering. <br className="hidden md:block" />
+            <span className="text-muted dark:text-gray-500">Intentional Design.</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted dark:text-gray-400 font-light leading-relaxed max-w-2xl mb-12">
-            I’m {RESUME_DATA.name}, a Mechanical Engineer specializing in product design, thermal analysis, and bringing complex hardware from concept to reality.
+            I’m {RESUME_DATA.name}, a Mechanical Engineer specializing in product design and development with 4+ years of
+             experience in the medical device industry. I have a proven track record of and bringing complex hardware from concept to reality.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 items-start">
-            <Link
-              to="/portfolio"
-              className="group inline-flex items-center text-lg font-medium text-primary dark:text-white hover:opacity-70 transition-opacity"
-            >
-              View Portfolio 
-              <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-            </Link>
-          </div>
           <div className="flex flex-col sm:flex-row gap-6 items-start">
             <Link
               to="/resume"
               className="group inline-flex items-center text-lg font-medium text-primary dark:text-white hover:opacity-70 transition-opacity"
             >
-              View Resume 
+              View Resume
               <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
             </Link>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-6 items-start">
+            {/* <Link
+              to="/portfolio"
+              className="group inline-flex items-center text-lg font-medium text-primary dark:text-white hover:opacity-70 transition-opacity"
+            >
+              View Portfolio
+              <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+            </Link> */}
           </div>
         </div>
       </section>
 
       {/* Minimalist Grid Section */}
-      <section className="py-24 bg-secondary dark:bg-zinc-900 transition-colors duration-300">
+      {/* <section className="py-24 bg-secondary dark:bg-zinc-900 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             <div>
@@ -62,14 +62,14 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
-      
+      </section> */}
+
       {/* Contact Simple */}
       <section className="py-32 px-6 sm:px-8 max-w-7xl mx-auto text-center">
-         <h2 className="text-3xl md:text-4xl font-medium tracking-tight mb-6 text-primary dark:text-white">Ready to collaborate?</h2>
-         <Link to="/resume" className="inline-block px-8 py-4 bg-primary dark:bg-white text-white dark:text-black rounded-full font-medium hover:bg-black dark:hover:bg-gray-200 transition-colors transform hover:scale-105 duration-200">
-            View Resume & Contact
-         </Link>
+        <h2 className="text-3xl md:text-4xl font-medium tracking-tight mb-6 text-primary dark:text-white">Ready to collaborate?</h2>
+        <Link to="/resume" className="inline-block px-8 py-4 bg-primary dark:bg-white text-white dark:text-black rounded-full font-medium hover:bg-black dark:hover:bg-gray-200 transition-colors transform hover:scale-105 duration-200">
+          View Resume & Contact
+        </Link>
       </section>
     </div>
   );

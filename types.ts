@@ -11,6 +11,7 @@ export interface Experience {
   id: string;
   role: string;
   company: string;
+  location: string;
   period: string;
   description: string[];
 }
@@ -30,7 +31,7 @@ export interface Skill {
 export interface ResumeData {
   name: string;
   title: string;
-  summary: string;
+  about: string;
   contact: {
     email: string;
     phone: string;

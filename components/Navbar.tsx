@@ -39,12 +39,13 @@ const Navbar: React.FC = () => {
   };
 
   const navLinks = [
-    { name: 'Portfolio', path: '/portfolio' },
+    { name: 'Home', path: '/' },
     { name: 'Resume', path: '/resume' },
+    // { name: 'Portfolio', path: '/portfolio' },
   ];
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-300 print:hidden ${
+    <nav className={`sticky top-0 z-50 transition-[background-color,backdrop-filter] duration-300 print:hidden ${
       scrolled 
         ? 'bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-100 dark:border-white/10' 
         : 'bg-transparent'
